@@ -109,7 +109,7 @@ helper_libs = []
 
 
 if host_cpu_family.startswith('x86')
-  cflags += ['-mfpmath=sse', '-msse2', '-DMVTOOLS_X86=1']
+  cflags += ['-march=native', '-DMVTOOLS_X86=1']
 
 
   nasm_sources = [
